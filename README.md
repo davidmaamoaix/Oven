@@ -3,9 +3,9 @@ An util package that include algorithms, functions and IO similar to that of oth
 
 ## Installation
 * Installation with pip is recommended.
-'''sh
+```sh
 pip install oven
-'''
+```
 
 ## Table of Contents
 
