@@ -9,9 +9,9 @@ pip install oven
 
 ## Table of Contents
 
-- [Standard I/O](#standard-i/o)
+- [Standard I/O](#standard-io)
 	- [Creating Session](#creating-session)
-	- [Calling cin/cout](#calling-cin/cout)
+	- [Calling cin/cout](#calling-cincout)
 - [Pointer](#pointer)
 	- [Instantiating Pointers](#instantiating-pointers)
 	- [Calling Pointers](#calling-pointers)
