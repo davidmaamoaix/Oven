@@ -1,4 +1,4 @@
-''' A standard input/output system '''
+''' A standard input/output system. '''
 
 from .stdio import *
 from .io_stream import *

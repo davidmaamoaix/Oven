@@ -34,9 +34,15 @@ def set_io(io_stream: FunctionType, path: str, method: str):
 
 		out_method = (io_stream, path, 'w')
 
+	else:
+		raise ValueError('invalid mode: \'%s\''%(method,))
+
 def cin() -> str:
 	''' Request io_stream to read line. '''
 	global in_buffer, in_method
+
+	if in_method == None:
+		raise NullSessionError('No established session. Create one with set_io().')
 
 	io_stream, path, method = in_method
 	out, in_buffer = io_stream(path, method, buffer = in_buffer)
@@ -48,3 +54,7 @@ def cout(value: str):
 
 	io_stream, path, method = out_method
 	io_stream(path, method, value = value)
+
+class NullSessionError(Exception):
+	''' No session is established when calling cin/cout. '''
+	pass

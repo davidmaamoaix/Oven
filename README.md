@@ -17,15 +17,15 @@ pip install oven
 	- [Calling Pointers](#calling-pointers)
 
 ## Standard I/O
-The [stdio]() module includes convient functions to redefine basic I/O.
+The [stdio](/tree/master/stdio) package includes convient functions to redefine basic I/O.
 
 ### Creating Session
-Import [stdio]() as such:
+Import [stdio](/tree/master/stdio) as such:
 ```python
 from oven.stdio import *
 ```
 
-The [stdio]() session is required in order to call any I/O functions. A session is created as such:
+The [stdio](/tree/master/stdio) session is required in order to call any I/O functions. A session is created as such:
 ```python
 set_io(IO_STREAM, 'path/to/file', METHOD)
 ```
@@ -37,7 +37,9 @@ The *IO_STREAM* can be any of:
 The *METHOD* can be any of:
 * *r* : Read from a file
 * *w* : Write to a file, create/override if nessesary
-* *a* : Append to a file, create/override if nessesary
+* *a* : Append to a file, create if nessesary
+
+Method *w* overrides the file and dump all output from the session, while *a* append all output from the session to the end of the file.
 
 Note that the [stdio]() session is created on the global scope, therefore one session will always suffice.
 
@@ -46,4 +48,25 @@ Despite the name, the cin/cout also applies to file IO.
 ```python
 cin() # Read one line.
 cout('Hello World') # Write. Note that \n is not added at the end.
+```
+
+## Pointer
+The [pointer](/tree/master/pointer) package includes a pointer object.
+
+### Instantiating Pointers
+A [pointer](/tree/master/pointer) is created as such:
+```python
+ptr_1 = Pointer()
+ptr_2 = Pointer(INIT_VALUE)
+```
+
+### Calling Pointers
+Getting value from pointer:
+```python
+value = ptr()
+```
+
+Assigning value to pointer:
+```python
+ptr(value)
 ```
