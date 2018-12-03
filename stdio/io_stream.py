@@ -22,4 +22,9 @@ def FILE(path: str, method: str, buffer: list = None, value: str = None):
 			f.write(value)
 
 def CONSOLE(path: str, method: str, buffer: list = None, value: str = None):
-	pass
+	'''Direct IO to the console.'''
+	if method == 'r':
+		return input(), buffer
+
+	if method == 'w':
+		print(value,end='')

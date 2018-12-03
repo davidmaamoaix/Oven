@@ -26,8 +26,9 @@ def set_io(io_stream: FunctionType, path: str, method: str):
 	elif method in ['w', 'a']:
 
 		''' Override the current file if nessesary. '''
-		with open(path, method) as f:
-			pass
+		if io_stream.__name__ == 'FILE':
+			with open(path, method) as f:
+				pass
 
 		global out_method
 
