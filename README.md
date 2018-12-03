@@ -17,15 +17,15 @@ pip install oven
 	- [Calling Pointers](#calling-pointers)
 
 ## Standard I/O
-The [stdio](/tree/master/stdio) package includes convient functions to redefine basic I/O.
+The [stdio](/stdio) package includes convient functions to redefine basic I/O.
 
 ### Creating Session
-Import [stdio](/tree/master/stdio) as such:
+Import [stdio](/stdio) as such:
 ```python
 from oven.stdio import *
 ```
 
-The [stdio](/tree/master/stdio) session is required in order to call any I/O functions. A session is created as such:
+The [stdio](/stdio) session is required in order to call any I/O functions. A session is created as such:
 ```python
 set_io(IO_STREAM, 'path/to/file', METHOD)
 ```
@@ -51,10 +51,10 @@ cout('Hello World') # Write. Note that \n is not added at the end.
 ```
 
 ## Pointer
-The [pointer](/tree/master/pointer) package includes a pointer object.
+The [pointer](/pointer) package includes a pointer object.
 
 ### Instantiating Pointers
-A [pointer](/tree/master/pointer) is created as such:
+A [pointer](/pointer) is created as such:
 ```python
 ptr_1 = Pointer()
 ptr_2 = Pointer(INIT_VALUE)
