@@ -2,6 +2,4 @@
 
 from .pointer import *
 
-__all__ = [
-			'Pointer',
-		  ]
+__all__ = ['Pointer']
