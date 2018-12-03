@@ -19,11 +19,12 @@ pip install oven
 ## Standard I/O
 The [stdio](/stdio) package includes convient functions to redefine basic I/O.
 
-### Creating Session
 Import [stdio](/stdio) as such:
 ```python
 from oven.stdio import *
 ```
+
+### Creating Session
 
 The [stdio](/stdio) session is required in order to call any I/O functions. A session is created as such:
 ```python
@@ -52,6 +53,11 @@ cout('Hello World') # Write. Note that \n is not added at the end.
 
 ## Pointer
 The [pointer](/pointer) package includes a pointer object.
+
+Import [pointer](/pointer) as such:
+```python
+from oven.pointer import Pointer
+```
 
 ### Instantiating Pointers
 A [pointer](/pointer) is created as such:

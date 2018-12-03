@@ -14,3 +14,9 @@ class Pointer:
 		if len(args) == 0:
 			return self.value
 		self.value = args[0]
+
+	def __repr__(self):
+		return str(self.value)
+
+	def __str__(self):
+		return str(self.value)
