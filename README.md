@@ -19,7 +19,7 @@ pip install oven
 	- [Stack](#stack)
 	- [Queue](#queue)
 	- [Tree](#tree)
-	- [Binary Tree](#binary-tree)
+	- [Binary Tree](#binarytree)
 
 ## Standard I/O
 The [stdio](/oven/stdio) package includes convient functions to redefine basic I/O.
