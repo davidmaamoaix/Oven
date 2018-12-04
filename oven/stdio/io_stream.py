@@ -1,9 +1,6 @@
 ''' Handler for io_stream requests. '''
 
-__all__ = [
-			'FILE',
-			'CONSOLE',
-		  ]
+__all__ = ['FILE', 'CONSOLE']
 
 def FILE(path: str, method: str, buffer: list = None, value: str = None):
 	''' Access a new line on call. '''

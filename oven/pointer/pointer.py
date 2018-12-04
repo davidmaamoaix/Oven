@@ -1,8 +1,6 @@
 ''' The pointer class. '''
 
-__all__ = [
-			'Pointer',
-		  ]
+__all__ = ['Pointer']
 
 class Pointer:
 

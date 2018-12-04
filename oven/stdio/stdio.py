@@ -1,10 +1,6 @@
 ''' Handler for IO requests. '''
 
-__all__ = [
-			'set_io',
-			'cin',
-			'cout',
-		  ]
+__all__ = ['set_io', 'cin', 'cout']
 
 ''' For type hints. '''
 from types import FunctionType
