@@ -1,5 +1,5 @@
 # Oven
-An util package that includes algorithms, functions and IO similar to that of other languages' standard library.
+An util package that includes algorithms, functions and IO similar to those of other languages' standard libraries.
 
 ## Installation
 Installation with pip is recommended.
@@ -19,7 +19,7 @@ pip install oven
 	- [Stack](#stack)
 	- [Queue](#queue)
 	- [Tree](#tree)
-	- [Binary Tree](#binarytree)
+	- [BinaryTree](#binarytree)
 
 ## Standard I/O
 The [stdio](/oven/stdio) package includes convient functions to redefine basic I/O.
