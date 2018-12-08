@@ -1,5 +1,5 @@
 # Oven
-An util package that includes algorithms, functions and IO similar to those of other languages' standard libraries.
+A util package that includes algorithms, functions and IO similar to those of other languages' standard libraries.
 
 ## Installation
 Installation with pip is recommended.
